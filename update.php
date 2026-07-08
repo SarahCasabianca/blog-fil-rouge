@@ -1,0 +1,67 @@
+<?php
+
+include('connect.php');
+
+$getData = $_GET;
+
+if (!isset($getData['id']) || !is_numeric($getData['id'])) {
+    echo ('Il faut un identifiant de news pour la modifier.');
+    return;
+}
+
+$retrieveArticleStatement = $mysqlClient->prepare('SELECT titre, contenu FROM articles_presse WHERE id = :id');
+
+$retrieveArticleStatement->execute([
+    'id' => (int)$getData['id'],
+]);
+
+$article = $retrieveArticleStatement->fetch(PDO::FETCH_ASSOC);
+
+if (!$article) {
+    echo ('Article introuvable. Vérifiez l\'ID fourni.');
+    return;
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edition d'article</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <div class="container">
+        <h1>Mettre à jour : <?= ($article['titre']); ?></h1>
+
+        
+        <form action="update-post.php" method="POST">
+        <div class="mb-3 visually-hidden">
+            <label for="id" class="form_label">Identifiant de la news</label>
+
+            <input type="hidden" class="form-control" id="id" name="id" value="<?= ($getData['id']); ?>">
+        </div>
+
+        <div class="mb-3">
+            <label for="titre" class="form-label">Titre</label>
+
+            <input type="text" class="form-control" id="titre" name="titre" aria-describedby="titre-help" value="<?= ($article['titre']); ?>">
+            <div id="titre-help" class="form-text text-primary-emphasis">Choisissez un titre percutant !</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="contenu" class="form-label">Contenu</label>
+
+            <textarea class="form-control" placeholder="" id="contenu" name="contenu"><?= $article['contenu']; ?></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+        <a class="btn btn-danger" role="button" href="read.php">RETOUR</a>
+        </form>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
