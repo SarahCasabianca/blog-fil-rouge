@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php
+    require_once(__DIR__ . '/head.php');
+    ?>
     <title>Lecture des articles</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
     <?php
-    include('connect.php');
+
     $sqlQuery = '
     SELECT a.id, a.titre, a.contenu, a.date_publication AS textequejeveux, r.score, r.lieu
         FROM articles_presse a
@@ -21,13 +21,7 @@ $newsFraiches->execute();
 
 $news = $newsFraiches->fetchAll();
 
-function truncateString($string, $length = 20)
-{
-    if (strlen($string) > $length) {
-        return substr($string, 0, $length) . ' (...)';
-    }
-    return $string;
-}
+
 
     ?>
 

@@ -1,6 +1,6 @@
 <?php
 
-include('connect.php');
+require_once(__DIR__ . '/head.php');
 
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $articleId = $_GET['id'];
@@ -29,8 +29,6 @@ $truncatedContent = substr($article['contenu'], 0, 50) . '';
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article du match</title>
 </head>
 <body>
