@@ -6,6 +6,14 @@ if (!isset($_SESSION['LOGGED_USER'])) :
 
 <div class="card col-12 col-md-4 p-3">
     <form action="submit-login.php" method="POST">
+        <?php if (!empty($_SESSION['LOGIN_ERROR_MESSAGE'])) : ?>
+    <div class="alert alert-danger" role="alert">
+        <?php
+        echo htmlspecialchars($_SESSION['LOGIN_ERROR_MESSAGE']);
+        unset($_SESSION['LOGIN_ERROR_MESSAGE']);
+        ?>
+    </div>
+<?php endif; ?>
 <!-- Email --> 
         <div class="mb-3">
             <h2>Vous voulez lire plus? Abonnez-vous :</h2>

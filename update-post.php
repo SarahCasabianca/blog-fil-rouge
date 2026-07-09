@@ -2,6 +2,13 @@
 
 require_once(__DIR__ . '/head.php');
 
+if (
+    !isset($_SESSION['LOGGED_USER'])
+    || $_SESSION['LOGGED_USER']['role'] === 'customer'
+) {
+    redirectToUrl('read.php');
+}
+
 $postData = $_POST;
 
 if (
@@ -27,7 +34,9 @@ $insertcontenuStatement->execute([
     'titre' => $titre,
     'contenu' => $contenu,
     'id' => $id,
-])
+]);
+
+logAction('modification', ['id' => $id, 'titre' => $titre]);
 
 ?>
 

@@ -2,6 +2,13 @@
 
 require_once(__DIR__ . '/head.php');
 
+if (
+    !isset($_SESSION['LOGGED_USER'])
+    || $_SESSION['LOGGED_USER']['role'] === 'customer'
+) {
+    redirectToUrl('read.php');
+}
+
 $postData = $_POST;
 
 if (
@@ -29,6 +36,8 @@ $insertcontenu->execute([
     'date_publication' => date('Y-m-d'),
     'match_id' => 0,
 ]);
+
+logAction('creation', ['titre' => $titre, 'auteur' => $auteur]);
 
 ?>
 

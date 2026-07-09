@@ -1,0 +1,4 @@
+Options -MultiViews
+
+RewriteEngine On
+RewriteRule ^article/([0-9]+)-([a-zA-Z0-9-]+)\.html$ article.php?id=$1 [L,QSA]

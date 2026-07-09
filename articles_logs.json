@@ -1,0 +1,602 @@
+[
+    {
+        "timestamp": "2025-01-17 15:06:32",
+        "action": "update_article_start",
+        "data": {
+            "post_data": {
+                "id": "27",
+                "titre": "Le Golf Frisbee à Libourne,  Une Activité Écologique",
+                "contenu": "eh bey c'est bieng  !                ",
+                "modifierMatch": "on",
+                "equipe1": "Sainte Foy",
+                "equipe2": "Lyon",
+                "score": "0-1",
+                "lieu": "Libourne parc des Dagueys",
+                "resume": "aute du joueur français"
+            }
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/132.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-01-17 15:06:32",
+        "action": "update_article_attempt",
+        "data": {
+            "id": 27,
+            "titre": "Le Golf Frisbee à Libourne,  Une Activité Écologique",
+            "contenu_length": 21
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/132.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-01-17 15:06:32",
+        "action": "update_article_success",
+        "data": {
+            "id": 27,
+            "rows_affected": 1
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/132.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-01-17 15:06:32",
+        "action": "update_match_attempt",
+        "data": {
+            "article_id": 27
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/132.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-01-17 15:06:32",
+        "action": "update_match_success",
+        "data": {
+            "match_id": 9,
+            "rows_affected": 1
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/132.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-01-17 15:56:32",
+        "action": "update_article_start",
+        "data": {
+            "post_data": {
+                "id": "1",
+                "titre": "Le PSG triomphe à domicile ! whaouh !",
+                "contenu": "Le Paris Saint-Germain a offert une performance de ouf dominante avec un score de 3-1 contre l'OM. Les supporters étaient en liesse.\r\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum temporibus, repellat incidunt neque accusantium odio, obcaecati tenetur omnis sint aperiam amet explicabo ab sunt consequatur vero molestiae? Dolore earum exercitationem id sit? Quidem non quasi corporis rem blanditiis, id illum totam eaque eum ad beatae ab dicta quae vero iure officia nostrum molestiae molestias? Pariatur incidunt unde ad minima assumenda cum rerum earum commodi eum, culpa esse ab officiis itaque praesentium eligendi obcaecati! Et quidem ipsa quibusdam veniam officia, beatae eius, maiores, consequuntur expedita non omnis. Voluptatum voluptate, voluptas enim, veritatis obcaecati sapiente iure architecto recusandae asperiores vel quo exercitationem!\r\n\r\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum temporibus, repellat incidunt neque accusantium odio, obcaecati tenetur omnis sint aperiam amet explicabo ab sunt consequatur vero molestiae? Dolore earum exercitationem id sit? Quidem non quasi corporis rem blanditiis, id illum totam eaque eum ad beatae ab dicta quae vero iure officia nostrum molestiae molestias? Pariatur incidunt unde ad minima assumenda cum rerum earum commodi eum, culpa esse ab officiis itaque praesentium eligendi obcaecati! Et quidem ipsa quibusdam veniam officia, beatae eius, maiores, consequuntur expedita non omnis. Voluptatum voluptate, voluptas enim, veritatis obcaecati sapiente iure architecto recusandae asperiores vel quo exercitationem!                ",
+                "equipe1": "Paris Saint-Germain",
+                "equipe2": "Olympique de Marseille",
+                "score": "3-1",
+                "lieu": "Paris",
+                "resume": "     Match intense avec des buts spectaculaires et une domination globale du PSG."
+            }
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/131.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-01-17 15:56:32",
+        "action": "update_article_attempt",
+        "data": {
+            "id": 1,
+            "titre": "Le PSG triomphe à domicile ! whaouh !",
+            "contenu_length": 1617
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/131.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-01-17 15:56:32",
+        "action": "update_article_success",
+        "data": {
+            "id": 1,
+            "rows_affected": 1
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/131.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-01-30 08:26:39",
+        "action": "update_article_start",
+        "data": {
+            "post_data": {
+                "id": "23",
+                "titre": "Classe virtuelle",
+                "contenu": "coucou                c'est nous",
+                "equipe1": "",
+                "equipe2": "",
+                "score": "",
+                "lieu": "",
+                "resume": "     "
+            }
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/132.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-01-30 08:26:39",
+        "action": "update_article_attempt",
+        "data": {
+            "id": 23,
+            "titre": "Classe virtuelle",
+            "contenu_length": 32
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/132.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-01-30 08:26:39",
+        "action": "update_article_success",
+        "data": {
+            "id": 23,
+            "rows_affected": 1
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/132.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-01-30 08:53:38",
+        "action": "update_article_start",
+        "data": {
+            "post_data": {
+                "id": "1",
+                "titre": "Le PSG triomphe face à Stuttgart ",
+                "contenu": "                    Le Paris Saint-Germain a offert une performance dominante avec un score de 3-1 contre l'OM. Les supporters étaient en liesse.                ",
+                "equipe1": "Paris Saint-Germain",
+                "equipe2": "Olympique de Marseille",
+                "score": "3-1",
+                "lieu": "Paris",
+                "resume": "     Match intense avec des buts spectaculaires et une domination globale du PSG."
+            }
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/132.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-01-30 08:53:38",
+        "action": "update_article_attempt",
+        "data": {
+            "id": 1,
+            "titre": "Le PSG triomphe face à Stuttgart",
+            "contenu_length": 126
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/132.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-01-30 08:53:38",
+        "action": "update_article_success",
+        "data": {
+            "id": 1,
+            "rows_affected": 1
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/132.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-01-30 09:58:30",
+        "action": "update_article_start",
+        "data": {
+            "post_data": {
+                "id": "24",
+                "titre": "marseille perd salement",
+                "contenu": "                    bhh                ",
+                "equipe1": "",
+                "equipe2": "",
+                "score": "",
+                "lieu": "",
+                "resume": "     "
+            }
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/132.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-01-30 09:58:30",
+        "action": "update_article_attempt",
+        "data": {
+            "id": 24,
+            "titre": "marseille perd salement",
+            "contenu_length": 3
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/132.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-01-30 09:58:30",
+        "action": "update_article_success",
+        "data": {
+            "id": 24,
+            "rows_affected": 0
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/132.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-01-30 09:58:34",
+        "action": "update_article_start",
+        "data": {
+            "post_data": {
+                "id": "24"
+            }
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/132.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-01-30 09:59:58",
+        "action": "delete_article_success",
+        "data": {
+            "id": null
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/132.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-01-30 09:59:58",
+        "action": "delete_article_success",
+        "data": {
+            "id": null
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/132.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-01-30 10:01:15",
+        "action": "delete_article_success",
+        "data": {
+            "id": 26
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/132.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-04-02 08:49:49",
+        "action": "delete_article_success",
+        "data": {
+            "id": 36
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/134.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-05-13 09:52:23",
+        "action": "update_article_start",
+        "data": {
+            "post_data": {
+                "id": "29",
+                "titre": "Test",
+                "contenu": "                    teste du 12 05 2025   rhsrhs             ",
+                "equipe1": "",
+                "equipe2": "",
+                "score": "",
+                "lieu": "",
+                "resume": "     "
+            }
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-05-13 09:52:23",
+        "action": "update_article_attempt",
+        "data": {
+            "id": 29,
+            "titre": "Test",
+            "contenu_length": 28
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-05-13 09:52:23",
+        "action": "update_article_success",
+        "data": {
+            "id": 29,
+            "rows_affected": 1
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-05-13 09:52:29",
+        "action": "delete_article_success",
+        "data": {
+            "id": 29
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-05-13 11:44:39",
+        "action": "update_article_start",
+        "data": {
+            "post_data": {
+                "id": "2",
+                "titre": "Monaco et Lyon se neutralisent",
+                "contenu": " Un match captivant entre l'AS Monaco et l'Olympique Lyonnais, se soldant par un score de 2-2. Deux égalisations incroyables ont marqué ce duel.                ",
+                "modifierMatch": "on",
+                "equipe1": "AS Monaco",
+                "equipe2": "Olympique Lyonnais",
+                "score": "2-2",
+                "lieu": "Monaco",
+                "resume": "     Un match équilibré avec deux égalisations spectaculaires."
+            }
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-05-13 11:44:39",
+        "action": "update_article_attempt",
+        "data": {
+            "id": 2,
+            "titre": "Monaco et Lyon se neutralisent",
+            "contenu_length": 145
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-05-13 11:44:39",
+        "action": "update_article_success",
+        "data": {
+            "id": 2,
+            "rows_affected": 0
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-05-13 11:44:39",
+        "action": "update_match_attempt",
+        "data": {
+            "article_id": 2
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-05-13 11:44:39",
+        "action": "update_match_success",
+        "data": {
+            "match_id": 2,
+            "rows_affected": 0
+        },
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/136.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-09-15 08:47:43",
+        "action": "update_article_start",
+        "data": {
+            "post_data": {
+                "id": "32",
+                "titre": "marseille perd salement mais ils ont le soleil",
+                "contenu": "                    blabla                ",
+                "equipe1": "marseille",
+                "equipe2": "Lille",
+                "score": "0-76",
+                "lieu": "marseille",
+                "resume": "     bof"
+            }
+        },
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/140.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-09-15 08:47:43",
+        "action": "update_article_attempt",
+        "data": {
+            "id": 32,
+            "titre": "marseille perd salement mais ils ont le soleil",
+            "contenu_length": 6
+        },
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/140.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-09-15 08:47:43",
+        "action": "update_article_success",
+        "data": {
+            "id": 32,
+            "rows_affected": 1
+        },
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/140.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-09-15 08:48:08",
+        "action": "delete_article_success",
+        "data": {
+            "id": 31
+        },
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/140.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-10-03 02:24:57",
+        "action": "delete_article_success",
+        "data": {
+            "id": 39
+        },
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/140.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-10-03 02:38:16",
+        "action": "delete_article_success",
+        "data": {
+            "id": 40
+        },
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/140.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2025-10-03 02:38:21",
+        "action": "delete_article_success",
+        "data": {
+            "id": 41
+        },
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/140.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2026-07-07 06:55:12",
+        "action": "delete_article_success",
+        "data": {
+            "id": 47
+        },
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/149.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2026-07-07 13:20:33",
+        "action": "update_article_start",
+        "data": {
+            "post_data": {
+                "id": "27",
+                "titre": "Le Golf Frisbee à Libourne,  Une Activité Écologique",
+                "contenu": "eh bey c'est bieng  !                ",
+                "modifierMatch": "on",
+                "equipe1": "Sainte Foy",
+                "equipe2": "Lyon",
+                "score": "0-1",
+                "lieu": "Libourne parc des Dagueys",
+                "resume": "j;gdgxdte du joueur français"
+            }
+        },
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/149.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2026-07-07 13:20:33",
+        "action": "update_article_attempt",
+        "data": {
+            "id": 27,
+            "titre": "Le Golf Frisbee à Libourne,  Une Activité Écologique",
+            "contenu_length": 21
+        },
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/149.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2026-07-07 13:20:33",
+        "action": "update_article_success",
+        "data": {
+            "id": 27,
+            "rows_affected": 0
+        },
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/149.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2026-07-07 13:20:33",
+        "action": "update_match_attempt",
+        "data": {
+            "article_id": 27
+        },
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/149.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2026-07-07 13:20:33",
+        "action": "update_match_success",
+        "data": {
+            "match_id": 9,
+            "rows_affected": 1
+        },
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/149.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2026-07-07 13:22:56",
+        "action": "update_article_start",
+        "data": {
+            "post_data": {
+                "id": "48",
+                "titre": "Le PSG triomphe à domicile ! whaouh !",
+                "contenu": "                    qefqegqeg                ",
+                "modifierMatch": "on",
+                "equipe1": "Paris Saint-Germain",
+                "equipe2": "Olympique de Marseille",
+                "score": "2-1",
+                "lieu": "Paris",
+                "resume": "     Match intense avec des buts spectaculaires et une domination globale du PSG."
+            }
+        },
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/149.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2026-07-07 13:22:56",
+        "action": "update_article_attempt",
+        "data": {
+            "id": 48,
+            "titre": "Le PSG triomphe à domicile ! whaouh !",
+            "contenu_length": 9
+        },
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/149.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2026-07-07 13:22:56",
+        "action": "update_article_success",
+        "data": {
+            "id": 48,
+            "rows_affected": 0
+        },
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/149.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2026-07-07 13:22:56",
+        "action": "update_match_attempt",
+        "data": {
+            "article_id": 48
+        },
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/149.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2026-07-07 13:22:56",
+        "action": "update_match_success",
+        "data": {
+            "match_id": 1,
+            "rows_affected": 1
+        },
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/149.0.0.0 Safari\/537.36"
+    },
+    {
+        "timestamp": "2026-07-09 11:56:38",
+        "action": "suppression",
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64; rv:152.0) Gecko\/20100101 Firefox\/152.0",
+        "data": {
+            "id": 6
+        }
+    },
+    {
+        "timestamp": "2026-07-09 11:56:44",
+        "action": "creation",
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64; rv:152.0) Gecko\/20100101 Firefox\/152.0",
+        "data": {
+            "titre": "gchjcgj",
+            "auteur": "fhgj"
+        }
+    },
+    {
+        "timestamp": "2026-07-09 11:56:51",
+        "action": "modification",
+        "ip": "127.0.0.1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64; rv:152.0) Gecko\/20100101 Firefox\/152.0",
+        "data": {
+            "id": 7,
+            "titre": "gchjcgj"
+        }
+    }
+]

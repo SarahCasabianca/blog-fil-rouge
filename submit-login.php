@@ -31,6 +31,7 @@ if (isset($postData['email']) && isset($postData['mdp'])) {
                     'prenom' => $user['prenom'],
                     'role'   => $user['role'],
                 ];
+                session_regenerate_id(true);
             }
         }
 
