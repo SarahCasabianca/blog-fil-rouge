@@ -13,7 +13,7 @@ $deleteArticleStatement = $mysqlClient->prepare('DELETE FROM article_presse WHER
 
 $deleteArticleStatement->execute([
     'id' => (int)$postData['id']
-])
+]);
 
 ?>
 

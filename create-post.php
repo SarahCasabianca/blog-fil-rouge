@@ -20,7 +20,7 @@ $titre = trim(strip_tags($postData['titre']));
 $contenu = trim(strip_tags($postData['contenu']));
 $auteur = trim(strip_tags($postData['auteur']));
 
-$insertcontenu = $mysqlClient->prepare('INSERT INTO articles_presse(titre, contenu, auteur, date_publication, match_id) VALUES (:titre, :contenu, :auteur, ;date_publication, :match_id)');
+$insertcontenu = $mysqlClient->prepare('INSERT INTO articles_presse(titre, contenu, auteur, date_publication, match_id) VALUES (:titre, :contenu, :auteur, :date_publication, :match_id)');
 
 $insertcontenu->execute([
     'titre' => $titre,
@@ -28,7 +28,7 @@ $insertcontenu->execute([
     'auteur' => $auteur,
     'date_publication' => date('Y-m-d'),
     'match_id' => 0,
-])
+]);
 
 ?>
 
@@ -43,9 +43,9 @@ $insertcontenu->execute([
 
         <div class="card">
             <div class="card-body">
-                <h5 class="card-tittle"><?= $titre; ?></h5>
-                <p class="card-text"><b>Par <?= $auteur; ?></b></p>
-                <p class="card-text"><?= $contenu; ?></p>
+                <h5 class="card-tittle"><?= htmlspecialchars(truncateString($titre)); ?></h5>
+                <p class="card-text"><b>Par <?= htmlspecialchars(truncateString($auteur)); ?></b></p>
+                <p class="card-text"><?= htmlspecialchars(truncateString($contenu)); ?></p>
             </div>
         </div>
 

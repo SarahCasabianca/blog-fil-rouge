@@ -21,7 +21,7 @@
 
         <div class="mb-3 d-flex flex-column">
             <label for="titre" class="form-label">Titre de l'article</label>
-            <input type="text" class="form-control" id="titre" aria-describedby="titre-help">
+            <input type="text" class="form-control" id="titre" name="titre" aria-describedby="titre-help">
             <div id="titre-help" class="form-text text-primary-emphasis">Choisissez un titre percutant !</div>
         </div>
 

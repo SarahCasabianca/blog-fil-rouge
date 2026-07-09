@@ -29,6 +29,10 @@ $news = $newsFraiches->fetchAll();
         <h1 class="text-primary text-center">PASSION FOOT</h1><hr>
 
         <div class="row">
+            <?php if (isset($_SESSION['LOGGED_USER'])) : ?>
+            <p>Bonjour <?= htmlspecialchars($_SESSION['LOGGED_USER']['prenom']) ?></p>
+            <?php endif; ?>
+            <?php require_once(__DIR__ . '/login.php'); ?>
 
             <div class="d-flex flex-row justify-content-center justify-content-md-end">
             <a type="button" class="btn btn-primary text-white me-3" href="create.php">Ajouter un article</a>
@@ -64,6 +68,7 @@ $news = $newsFraiches->fetchAll();
         </div>
     </div>
 
+    <?php require_once(__DIR__ . '/footer.php'); ?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>  
 </body>
 </html>

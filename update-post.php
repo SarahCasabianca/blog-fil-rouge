@@ -42,9 +42,9 @@ $insertcontenuStatement->execute([
 
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title"><?= ($titre); ?></h5>
+                <h5 class="card-title"><?= htmlspecialchars(truncateString($titre)); ?></h5>
 
-                <p class="card-text"><?= ($contenu); ?></p>
+                <p class="card-text"><?= htmlspecialchars(truncateString($contenu)); ?></p>
             </div>
         </div>
     </div>
