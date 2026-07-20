@@ -8,7 +8,6 @@
 
 <div class="container  my-3 p-5">
     <!-- Logo positionné à droite grâce à float-end -->
-    <img src="../img/equipe.png" alt="" class="w-25 float-end">
     <p>
 
         <!--
@@ -32,3 +31,7 @@
         Abonnez-vous !</p>
 
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

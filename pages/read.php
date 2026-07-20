@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <?php
-    require_once(__DIR__ . '/head.php');
-    ?>
-    <title>Lecture des articles</title>
-</head>
-<body>
-    <?php require_once(__DIR__ . '/header.php'); ?>
-
-    <?php
+<?php
     $sqlQuery = '
     SELECT a.id, a.titre, a.contenu, a.date_publication AS textequejeveux, r.score, r.lieu
         FROM articles_presse a
@@ -45,7 +34,7 @@
                 isset($_SESSION['LOGGED_USER'])
                 && ($_SESSION['LOGGED_USER']['role'] === 'owner' || $_SESSION['LOGGED_USER']['role'] === 'admin')
             ) : ?>
-                <a type="button" class="btn btn-primary text-white me-3" href="create.php">Ajouter un article</a>
+                <a type="button" class="btn btn-primary text-white me-3" href="create.html">Ajouter un article</a>
             <?php endif; ?>
             </div>
 
@@ -69,15 +58,15 @@
                     </div>
                     <div class="card-footer p-3 g-3">
                         <?php if (isset($_SESSION['LOGGED_USER']) && ($_SESSION['LOGGED_USER']['role'] === 'owner' || $_SESSION['LOGGED_USER']['role'] === 'admin')) : ?>
-                        <a type="button" class="btn btn-primary text-white m-2" href="<?= htmlspecialchars('update.php?id=' . $new['id']); ?>">Modifier l'article</a>
+                        <a type="button" class="btn btn-primary text-white m-2" href="<?= htmlspecialchars('update.html?id=' . $new['id']); ?>">Modifier l'article</a>
                         <?php endif; ?>
 
                         <?php if (isset($_SESSION['LOGGED_USER']) && ($_SESSION['LOGGED_USER']['role'] === 'admin')) : ?>
-                        <a type="button" class="btn btn-danger text-white m-2" href="<?= htmlspecialchars('delete.php?id=' . $new['id']); ?>">Supprimer l'article</a>
+                        <a type="button" class="btn btn-danger text-white m-2" href="<?= htmlspecialchars('delete.html?id=' . $new['id']); ?>">Supprimer l'article</a>
                         <?php endif; ?>
 
                         <!-- URL SEO-friendly : /article/12-le-titre.html, réécrite vers article.php?id=12 par le .htaccess -->
-                        <a type="button" class="btn btn-secondary text-white m-2" href="<?= htmlspecialchars('article/' . $new['id'] . '-' . $slug . '.html'); ?>">Ouvrir l'article</a>
+                        <a type="button" class="btn btn-secondary text-white m-2" href="<?= htmlspecialchars('articles/' . $new['id'] . '-' . $slug . '.html'); ?>">Ouvrir l'article</a>
                     </div>
                 </div>
             </div>
@@ -87,8 +76,3 @@
             ?>
         </div>
     </div>
-
-    <?php require_once(__DIR__ . '/footer.php'); ?>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>  
-</body>
-</html>

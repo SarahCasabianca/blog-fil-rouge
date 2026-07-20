@@ -1,12 +1,5 @@
 <?php
 
-// Démarre la session qui stocke les informations de connexion
-session_start();
-
-// Inclus la bdd et les fonctions
-require(__DIR__ . '/connect.php');
-require(__DIR__ . '/functions.php');
-
 // Je récupère les données du formulaire et les stocke dans $postData
 $postData = $_POST;
 
@@ -42,5 +35,5 @@ if (isset($postData['email']) && isset($postData['mdp'])) {
     }
 
     // Dans tous les cas (succès ou échec), retour à la liste des articles
-    redirectToUrl('read.php');
+    redirectToUrl('read.html');
 }

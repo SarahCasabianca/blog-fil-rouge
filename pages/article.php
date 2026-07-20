@@ -1,7 +1,5 @@
 <?php
 
-require_once(__DIR__ . '/head.php');
-
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
     $articleId = $_GET['id'];
@@ -20,12 +18,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 }
 
 ?>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <title>PASSION FOOT | <?= isset($article['titre']) ? htmlspecialchars($article['titre']) : 'Article'; ?></title>
-</head>
-<body>
+
     <div class="container text-center d-flex flex-wrap justify-content-center">
 
     <?php if (isset($article) && $article) : ?>
@@ -56,9 +49,9 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
         <div class="col-12 mb-4">
             <button id="shareButton" class="btn btn-secondary"
                 data-title="<?= htmlspecialchars($article['titre']); ?>"
-                data-url="article.php?id=<?= (int)$article['id']; ?>">Partager</button>
+                data-url="article.html?id=<?= (int)$article['id']; ?>">Partager</button>
 
-            <a class="btn btn-primary" role="button" href="../read.php">RETOUR</a>
+            <a class="btn btn-primary" role="button" href="../read.html">RETOUR</a>
             <div id="shareAlert"></div>
         </div>
 
@@ -74,12 +67,9 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
         </script>
 
     <?php elseif (isset($article)) : ?>
-        <div class="card m-5 p-5"><p>Article non trouvé.</p><a href="read.php">RETOUR</a></div>
+        <div class="card m-5 p-5"><p>Article non trouvé.</p><a href="read.html">RETOUR</a></div>
     <?php else : ?>
-        <div class="card m-5 p-5"><p>Identifiant d'article manquant ou invalide.</p><a href="read.php">RETOUR</a></div>
+        <div class="card m-5 p-5"><p>Identifiant d'article manquant ou invalide.</p><a href="read.html">RETOUR</a></div>
     <?php endif; ?>
 
     </div>
-    <?php require_once(__DIR__ . '/footer.php'); ?>
-</body>
-</html>

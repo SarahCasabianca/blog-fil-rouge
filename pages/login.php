@@ -5,7 +5,7 @@ if (!isset($_SESSION['LOGGED_USER'])) :
 ?>
 
 <div class="card col-12 col-md-4 p-3">
-    <form action="submit-login.php" method="POST">
+    <form action="submit-login.html" method="POST">
         <?php if (!empty($_SESSION['LOGIN_ERROR_MESSAGE'])) : ?>
     <div class="alert alert-danger" role="alert">
         <?php

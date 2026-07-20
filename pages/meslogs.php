@@ -1,16 +1,14 @@
 <?php
 
-require_once(__DIR__ . '/head.php');
-
 if (
     !isset($_SESSION['LOGGED_USER'])
     || $_SESSION['LOGGED_USER']['role'] !== 'admin'
 ) {
-    redirectToUrl('read.php');
+    redirectToUrl('read.html');
 }
 
 // Nom du fichier contenant les logs JSON
-$fichier_logs = 'articles_logs.json';
+$fichier_logs = __DIR__ . '/../common/articles_logs.json';
 
 // Vérifier si le fichier existe
 if (!file_exists($fichier_logs)) {
