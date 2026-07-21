@@ -1,8 +1,9 @@
 <?php
 
-if ( !hasRole('admin') && !hasRole('owner') ) {
+if (!hasRole('admin')) {
     redirectToUrl('read.html');
 }
+
 
 
 $getData = $_GET;
@@ -28,6 +29,16 @@ if (!$article) {
 ?>
 
     <div class="container">
+
+ <?php if (!empty($_SESSION['SUCCESS_MESSAGE'])) : ?>
+                <div class="alert alert-success" role="alert">
+                    <?php
+                    echo htmlspecialchars($_SESSION['SUCCESS_MESSAGE']);
+                    unset($_SESSION['SUCCESS_MESSAGE']);
+                    ?>
+                </div>
+            <?php endif; ?>
+
         <h1>Mettre à jour : <?= htmlspecialchars($article['titre']); ?></h1>
 
         

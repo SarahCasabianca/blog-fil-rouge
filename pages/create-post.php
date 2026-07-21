@@ -41,7 +41,7 @@ $insertcontenu->execute([
 logAction('creation', ['titre' => $titre, 'auteur' => $auteur]);
 
 // Récupérer l'ID du dernier article supprimé
-$lastId = $postData['id'];
+$lastId = $mysqlClient->lastInsertId();
 
 // Stocker le message de succès en session
 $_SESSION['SUCCESS_MESSAGE'] = "L'article a été ajouté avec succès ! Vous pouvez le corriger si nécessaire :";
