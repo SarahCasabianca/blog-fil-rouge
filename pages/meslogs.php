@@ -1,9 +1,6 @@
 <?php
 
-if (
-    !isset($_SESSION['LOGGED_USER'])
-    || $_SESSION['LOGGED_USER']['role'] !== 'admin'
-) {
+if (!hasRole('admin')) {
     redirectToUrl('read.html');
 }
 

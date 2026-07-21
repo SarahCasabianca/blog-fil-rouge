@@ -1,9 +1,6 @@
 <?php
 
-if (
-    !isset($_SESSION['LOGGED_USER'])
-    || $_SESSION['LOGGED_USER']['role'] !== 'admin'
-) {
+if (!hasRole('admin')) {
     redirectToUrl('read.html');
 }
 
@@ -21,8 +18,10 @@ if (!isset($getData['id']) || !is_numeric($getData['id'])) {
         <h1>Supprimer l'article ?</h1>
 
         <form action="delete-post.html" method="post">
+            <div class="mb-3">
+                <label for="id" class="form-label">Voulez-vous supprimer l'article n°<?= $getData['id']; ?> ?</label>
+            </div>
             <div class="mb-3 visually-hidden">
-                <label for="id" class="form-label">Voulez-vous supprimer l'article <?= $getData['id']; ?> <?= $getData['titre'] ?>  écrit par <?= $getData['auteur'] ?> ?</label>
                 <input type="hidden" class="form-control" id="id" name="id" value="<?= $getData['id']; ?>">
             </div>
 

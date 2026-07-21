@@ -64,4 +64,13 @@ function logAction(string $action, array $donnees = [])
     file_put_contents($logFile, json_encode($logs, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 }
 
+function hasRole($role)
+{   
+    if (!isset($_SESSION['LOGGED_USER'])) {
+    return false;
+    }
+
+    return ($_SESSION['LOGGED_USER']['role'] === $role);
+}
+
 ?>

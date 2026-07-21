@@ -598,5 +598,62 @@
             "id": 7,
             "titre": "gchjcgj"
         }
+    },
+    {
+        "timestamp": "2026-07-21 07:05:02",
+        "action": "suppression",
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/150.0.0.0 Safari\/537.36",
+        "data": {
+            "id": 7
+        }
+    },
+    {
+        "timestamp": "2026-07-21 09:44:42",
+        "action": "creation",
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/150.0.0.0 Safari\/537.36",
+        "data": {
+            "titre": "zqgrqeg",
+            "auteur": "rgeshg"
+        }
+    },
+    {
+        "timestamp": "2026-07-21 09:44:51",
+        "action": "creation",
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/150.0.0.0 Safari\/537.36",
+        "data": {
+            "titre": "zqgrqeg",
+            "auteur": "rgeshg"
+        }
+    },
+    {
+        "timestamp": "2026-07-21 09:45:00",
+        "action": "suppression",
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/150.0.0.0 Safari\/537.36",
+        "data": {
+            "id": 9
+        }
+    },
+    {
+        "timestamp": "2026-07-21 12:06:21",
+        "action": "suppression",
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/150.0.0.0 Safari\/537.36",
+        "data": {
+            "id": 8
+        }
+    },
+    {
+        "timestamp": "2026-07-21 12:07:55",
+        "action": "creation",
+        "ip": "::1",
+        "user_agent": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/150.0.0.0 Safari\/537.36",
+        "data": {
+            "titre": "dwgdgf",
+            "auteur": "sdgfsg"
+        }
     }
 ]

@@ -1,10 +1,12 @@
 <?php
 
-if (
-    !isset($_SESSION['LOGGED_USER'])
-    || $_SESSION['LOGGED_USER']['role'] === 'customer'
-) {
-    redirectToUrl('read.html');
+if ( !hasRole('admin') && !hasRole('owner') ) {
+    // Stocker le message de succès en session
+$_SESSION['FAIL_MESSAGE'] = "Vous n'avez pas les droits pour modifier un article! Retour vers la page d'accueil.";
+
+// Rediriger vers edit.php avec l'ID
+header('Location: read.html');
+exit;
 }
 
 $postData = $_POST;
@@ -44,4 +46,5 @@ $_SESSION['SUCCESS_MESSAGE'] = "L'article a été modifié avec succès ! Vous p
 
 // Rediriger vers edit.php avec l'ID
 header('Location: update.html?id=' . $lastId);
+exit;
 ?>

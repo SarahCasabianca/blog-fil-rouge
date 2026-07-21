@@ -27,13 +27,19 @@
                 </div>
             <?php endif; ?>
 
+            <?php if (!empty($_SESSION['FAIL_MESSAGE'])) : ?>
+                <div class="alert alert-danger" role="alert">
+                    <?php
+                    echo htmlspecialchars($_SESSION['FAIL_MESSAGE']);
+                    unset($_SESSION['FAIL_MESSAGE']);
+                    ?>
+                </div>
+            <?php endif; ?>
+
             <?php require_once(__DIR__ . '/login.php'); ?>
 
             <div class="d-flex flex-row justify-content-center justify-content-md-end">
-            <?php if (
-                isset($_SESSION['LOGGED_USER'])
-                && ($_SESSION['LOGGED_USER']['role'] === 'owner' || $_SESSION['LOGGED_USER']['role'] === 'admin')
-            ) : ?>
+            <?php if (hasRole('admin') || hasRole('owner')) : ?>
                 <a type="button" class="btn btn-primary text-white me-3" href="create.html">Ajouter un article</a>
             <?php endif; ?>
             </div>
@@ -54,19 +60,21 @@
 
                         <p class="card-text"><?= htmlspecialchars(truncateString($new['contenu'], 100)); ?></p>
 
+                        <p class="card-text"><strong>Score du match : </strong><?= htmlspecialchars($new['score'] ?? 'Il n\'y a pas de score'); ?></p>
+
                         <p class="card-text"><?= htmlspecialchars($new['textequejeveux']); ?></p>
                     </div>
                     <div class="card-footer p-3 g-3">
-                        <?php if (isset($_SESSION['LOGGED_USER']) && ($_SESSION['LOGGED_USER']['role'] === 'owner' || $_SESSION['LOGGED_USER']['role'] === 'admin')) : ?>
-                        <a type="button" class="btn btn-primary text-white m-2" href="<?= htmlspecialchars('update.html?id=' . $new['id']); ?>">Modifier l'article</a>
+                        <?php if (hasRole('admin') || hasRole('owner')) : ?>
+                        <a class="btn btn-primary text-white m-2" href="<?= htmlspecialchars('update.html?id=' . $new['id']); ?>">Modifier l'article</a>
                         <?php endif; ?>
 
-                        <?php if (isset($_SESSION['LOGGED_USER']) && ($_SESSION['LOGGED_USER']['role'] === 'admin')) : ?>
-                        <a type="button" class="btn btn-danger text-white m-2" href="<?= htmlspecialchars('delete.html?id=' . $new['id']); ?>">Supprimer l'article</a>
+                        <?php if (hasRole('admin')) : ?>
+                        <a class="btn btn-danger text-white m-2" href="<?= htmlspecialchars('delete.html?id=' . $new['id']); ?>">Supprimer l'article</a>
                         <?php endif; ?>
 
                         <!-- URL SEO-friendly : /article/12-le-titre.html, réécrite vers article.php?id=12 par le .htaccess -->
-                        <a type="button" class="btn btn-secondary text-white m-2" href="<?= htmlspecialchars('articles/' . $new['id'] . '-' . $slug . '.html'); ?>">Ouvrir l'article</a>
+                        <a class="btn btn-secondary text-white m-2" href="<?= htmlspecialchars('articles/' . $new['id'] . '-' . $slug . '.html'); ?>">Ouvrir l'article</a>
                     </div>
                 </div>
             </div>

@@ -1,10 +1,12 @@
 <?php
 
-if (
-    !isset($_SESSION['LOGGED_USER'])
-    || $_SESSION['LOGGED_USER']['role'] !== 'admin'
-) {
-    redirectToUrl('read.html');
+if (!hasRole('admin')) {
+    // Stocker le message de succès en session
+$_SESSION['FAIL_MESSAGE'] = "Vous n'avez pas les droits pour ajouter un article! Retour vers la page d'accueil;";
+
+// Rediriger vers edit.php avec l'ID
+header('Location: read.html');
+exit;
 }
 
 $postData = $_POST;
@@ -27,4 +29,5 @@ $_SESSION['SUCCESS_MESSAGE'] = "L'article a été définitivement supprimé !";
 
 // Rediriger vers edit.php avec l'ID
 header('Location: read.html');
+exit;
 ?>
